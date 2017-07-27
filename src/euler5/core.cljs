@@ -47,8 +47,10 @@
   (reagent/render-component [counting-component] element))
 
 (.log js/console "Greetings. Thank you for reviewing this submission")
-(.log js/console "firstPalindrome " (str (first (palindromeArray 5))))
-(.log js/console  "reduce bignumarray " (reduce + (numarray 5)))
-(.log js/console "reduce bignumarray -1" (reduce + (numarray (- 5 1))))
+
+(comment
+  (.log js/console "firstPalindrome " (str (first (palindromeArray 5))))
+  (.log js/console "reduce bignumarray " (reduce + (numarray 5)))
+  (.log js/console "reduce bignumarray -1" (reduce + (numarray (- 5 1)))))
 
 
